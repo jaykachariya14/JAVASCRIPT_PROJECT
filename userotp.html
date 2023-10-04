@@ -1,0 +1,10 @@
+<h1 id="otp"></h1>
+Send Request :- <button type="button" onclick="userotp()">Otp</button>
+<script type="text/javascript">
+    let getotp = JSON.parse(localStorage.getItem('otp'));
+    document.getElementById('otp').innerHTML="Please copy otp:- "+getotp.otp;
+
+    function userotp(){
+        window.location.href="otp.html";
+    }
+</script>
